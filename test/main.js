@@ -41,6 +41,7 @@ describe('DOM', () => {
 			height: 40,
 			alt: 'Michelle Appleton',
 		};
+
 		expect(authorImageData, 'to satisfy', mockupAuthorImageData);
 	});
 
