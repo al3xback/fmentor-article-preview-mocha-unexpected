@@ -29,12 +29,12 @@ describe('DOM', () => {
 	});
 
 	it('should have an author image element which has alt and dimension equals to mockup data', () => {
-		const shareButtonElements = document.querySelector('.card__author-img');
+		const cardAuthorImageEl = document.querySelector('.card__author-img');
 
 		const authorImageData = {
-			width: shareButtonElements.width,
-			height: shareButtonElements.height,
-			alt: shareButtonElements.alt,
+			width: parseInt(cardAuthorImageEl.getAttribute('width')),
+			height: parseInt(cardAuthorImageEl.getAttribute('height')),
+			alt: cardAuthorImageEl.getAttribute('alt'),
 		};
 
 		const mockupAuthorImageData = {
