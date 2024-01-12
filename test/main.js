@@ -29,21 +29,21 @@ describe('DOM', () => {
 	});
 
 	it('should have an author image element which has alt and dimension equals to mockup data', () => {
-		const cardAuthorImageEl = document.querySelector('.card__author-img');
+		const cardAuthorImgEl = document.querySelector('.card__author-img');
 
-		const authorImageData = {
-			width: parseInt(cardAuthorImageEl.getAttribute('width')),
-			height: parseInt(cardAuthorImageEl.getAttribute('height')),
-			alt: cardAuthorImageEl.getAttribute('alt'),
+		const authorImgData = {
+			width: parseInt(cardAuthorImgEl.getAttribute('width')),
+			height: parseInt(cardAuthorImgEl.getAttribute('height')),
+			alt: cardAuthorImgEl.getAttribute('alt'),
 		};
 
-		const mockupAuthorImageData = {
+		const mockupAuthorImgData = {
 			width: 40,
 			height: 40,
 			alt: 'Michelle Appleton',
 		};
 
-		expect(authorImageData, 'to satisfy', mockupAuthorImageData);
+		expect(authorImgData, 'to satisfy', mockupAuthorImgData);
 	});
 
 	it("should have a 'Share' text", () => {
@@ -55,10 +55,10 @@ describe('DOM', () => {
 	});
 
 	it('should have three share button elements', () => {
-		const shareButtonElements = document.querySelectorAll(
+		const shareBtnEls = document.querySelectorAll(
 			'.card__share-action-buttons li'
 		);
 
-		expect(shareButtonElements.length, 'to equal', 3);
+		expect(shareBtnEls.length, 'to equal', 3);
 	});
 });
