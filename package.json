@@ -1,7 +1,7 @@
 {
 	"name": "fmentor-article-preview-mocha-unexpected",
 	"version": "1.0.0",
-	"description": "article preview component using mocha and unexpected testing",
+	"description": "article preview component using mocha and unexpected",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
